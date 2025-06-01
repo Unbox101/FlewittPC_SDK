@@ -4,3 +4,5 @@ shell
 .vscode
 build.exe
 build
+main.exe
+main

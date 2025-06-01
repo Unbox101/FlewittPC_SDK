@@ -1,2 +1,3 @@
 *.c linguist-language=C
 *.h linguist-language=C
+stb_ds.h linguist-language=C

@@ -6,3 +6,7 @@ build.exe
 build
 main.exe
 main
+build.exe.old
+build.old
+main.exe.old
+main.old

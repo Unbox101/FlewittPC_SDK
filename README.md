@@ -46,7 +46,7 @@ register j: 12bits (it's special)
 | jmp    |  10  |    -     |   ?    | Copies jump-register address into program_counter.         |
 | jz     |  11  |    -     |   ?    | "jmp" if register a is zero.                               |
 | jc     |  12  |    -     |   ?    | "jmp" if the register a + register b > 255.                |
-| writed |  13  |    -     |   ?    | Write the next constant into the LCD display.              |
+| writed |  13  |   byte   |   ?    | Write the next constant into the LCD display.              |
 | readd  |  14  |    -     |   ?    | Copy LCD display output into register a.                   |
 | halt   | 255  |    -     |   ?    | Stops the computer.                                        |
 
@@ -57,3 +57,8 @@ register j: 12bits (it's special)
 | _debug_print_mem | 253  |  short  |   ?    | Used in the emulator. Prints the memory at the operand's memory location to console. <br>Also temporarily halts the program. Waits for a keypress before continuing. |
 | _debug_halt      | 254  |    -    |   ?    | Used in the emulator. Temporarily halts the program. Waits for a keypress before continuing.                                                                         |
 
+## Micro Instructions (hardware)
+
+| Setting | Disabled when | Pin# | Description                   |
+| ------- | :-----------: | :--: | ----------------------------- |
+| ao      |      off      | 7E1  | Enables output of register a. |

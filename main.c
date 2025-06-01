@@ -23,7 +23,7 @@ SString_arr funnie_comments = NULL;
 | jmp    |  10  |    -     |   ?    | Copies jump-register address into program_counter.         |
 | jz     |  11  |    -     |   ?    | "jmp" if register a is zero.                               |
 | jc     |  12  |    -     |   ?    | "jmp" if the register a + register b > 255.                |
-| writed |  13  |   byte   |   ?    | Write the next constant into the LCD display.              |
+| writed |  13  |    -     |   ?    | Write the next constant into the LCD display.              |
 | readd  |  14  |    -     |   ?    | Copy LCD display output into register a.                   |
 | halt   | 255  |    -     |   ?    | Stops the computer.                                        |
 */
